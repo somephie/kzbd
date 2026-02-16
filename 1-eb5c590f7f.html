@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>康姿百德集团概况与品牌认知 - 知识库</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f7fa;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .header .description {
+            opacity: 0.9;
+            font-size: 1.1em;
+        }
+        
+        .metadata {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        
+        .metadata h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        .metadata-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        
+        .metadata-item {
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 5px;
+        }
+        
+        .metadata-label {
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+        
+        .tags-section {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        
+        .tags-section h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        .tag-group {
+            margin-bottom: 20px;
+        }
+        
+        .tag-group-title {
+            font-weight: bold;
+            color: #764ba2;
+            margin-bottom: 10px;
+        }
+        
+        .tags-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        
+        .tag {
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            display: inline-block;
+        }
+        
+        .tag.main {
+            background: #667eea;
+            color: white;
+        }
+        
+        .tag.sub {
+            background: #764ba2;
+            color: white;
+        }
+        
+        .tag.keyword {
+            background: #f093fb;
+            color: white;
+        }
+        
+        .version-info {
+            background: #e8f5e9;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 15px;
+            border-left: 4px solid #4caf50;
+        }
+        
+        .knowledge-unit {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            border-left: 4px solid #667eea;
+        }
+        
+        .unit-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .unit-id {
+            color: #999;
+            font-size: 0.85em;
+        }
+        
+        .validity-badge {
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            font-weight: bold;
+        }
+        
+        .validity-permanent {
+            background: #4caf50;
+            color: white;
+        }
+        
+        .validity-annual {
+            background: #ff9800;
+            color: white;
+        }
+        
+        .validity-semi-annual {
+            background: #f44336;
+            color: white;
+        }
+        
+        .unit-content {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            white-space: pre-wrap;
+            line-height: 1.8;
+        }
+        
+        .section-title {
+            color: #667eea;
+            font-weight: bold;
+            margin: 20px 0 10px 0;
+            font-size: 1.1em;
+        }
+        
+        .concepts-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+        
+        .concept-item {
+            background: #e3f2fd;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+        
+        .concept-name {
+            font-weight: bold;
+            color: #1976d2;
+        }
+        
+        .concept-context {
+            color: #666;
+            font-size: 0.85em;
+        }
+        
+        .extension-item {
+            background: #fff3e0;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        
+        .extension-type {
+            font-weight: bold;
+            color: #f57c00;
+            font-size: 0.9em;
+        }
+        
+        .extension-content {
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        .case-item {
+            background: #e1f5fe;
+            padding: 12px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        
+        .case-type {
+            font-weight: bold;
+            color: #0288d1;
+            font-size: 0.9em;
+        }
+        
+        .case-title {
+            color: #333;
+            margin: 5px 0;
+            font-weight: bold;
+        }
+        
+        .case-application {
+            color: #666;
+            font-size: 0.85em;
+            font-style: italic;
+        }
+        
+        .note-item {
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            border-left: 3px solid #ff9800;
+        }
+        
+        .note-high {
+            background: #ffebee;
+            border-left-color: #f44336;
+        }
+        
+        .note-medium {
+            background: #fff3e0;
+        }
+        
+        .note-low {
+            background: #f1f8e9;
+            border-left-color: #4caf50;
+        }
+        
+        .note-type {
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+        
+        .note-content {
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        .conversation-node {
+            background: #f3e5f5;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            border: 2px dashed #9c27b0;
+        }
+        
+        .conversation-title {
+            font-weight: bold;
+            color: #7b1fa2;
+            margin-bottom: 10px;
+        }
+        
+        .conversation-question {
+            color: #333;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        
+        .conversation-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-top: 10px;
+        }
+        
+        .statistics {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        
+        .statistics h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        
+        .stat-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 2em;
+            font-weight: bold;
+            color: #667eea;
+        }
+        
+        .stat-label {
+            color: #666;
+            margin-top: 5px;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: #999;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 头部信息 -->
+        <div class="header">
+            <h1>康姿百德集团概况与品牌认知</h1>
+            <p class="description">康姿百德郑州店员工培训第一章，涵盖公司发展历程、董事长介绍、科研专利、企业荣誉、公益活动和企业文化</p>
+        </div>
+        
+        <!-- 元数据信息 -->
+        <div class="metadata">
+            <h2>📋 文档元数据</h2>
+            <div class="metadata-grid">
+                <div class="metadata-item">
+                    <div class="metadata-label">作者</div>
+                    <div>康姿百德集团培训部</div>
+                </div>
+                <div class="metadata-item">
+                    <div class="metadata-label">原始文档</div>
+                    <div>1.1第一章_公司概况与品牌认知.docx</div>
+                </div>
+                <div class="metadata-item">
+                    <div class="metadata-label">文档类型</div>
+                    <div>manual</div>
+                </div>
+                <div class="metadata-item">
+                    <div class="metadata-label">知识单元数</div>
+                    <div>9</div>
+                </div>
+                <div class="metadata-item">
+                    <div class="metadata-label">总字数</div>
+                    <div>3261</div>
+                </div>
+                <div class="metadata-item">
+                    <div class="metadata-label">创建时间</div>
+                    <div>2026-02-16T14:00:21.659125</div>
+                </div>
+            </div>
+            
+            <!-- 版本管理信息 -->
+            <div class="version-info">
+                <strong>📚 版本管理</strong>
+                <p style="margin-top: 10px;">
+                    <strong>当前版本:</strong> 1.0<br>
+                    <strong>最后更新:</strong> 2026-02-16T14:00:58<br>
+                    <strong>更新历史:</strong> 1 次更新
+                </p>
+            </div>
+        </div>
+        
+        <!-- 标签体系 -->
+        <div class="tags-section">
+            <h2>🏷️ 标签体系</h2>
+            
+            <div class="tag-group">
+                <div class="tag-group-title">主主题</div>
+                <div class="tags-container">
+                    <span class="tag main">康姿百德集团</span><span class="tag main">品牌认知</span><span class="tag main">员工培训</span>
+                </div>
+            </div>
+            
+            <div class="tag-group">
+                <div class="tag-group-title">子主题</div>
+                <div class="tags-container">
+                    <span class="tag sub">企业发展历程</span><span class="tag sub">董事长介绍</span><span class="tag sub">科研成果</span><span class="tag sub">专利体系</span><span class="tag sub">企业荣誉</span><span class="tag sub">公益活动</span><span class="tag sub">企业文化</span><span class="tag sub">技术标准</span><span class="tag sub">话术规范</span><span class="tag sub">考核标准</span>
+                </div>
+            </div>
+            
+            <div class="tag-group">
+                <div class="tag-group-title">关键词</div>
+                <div class="tags-container">
+                    <span class="tag keyword">磁疗技术</span><span class="tag keyword">模拟古地磁场</span><span class="tag keyword">睡眠系统</span><span class="tag keyword">专利</span><span class="tag keyword">高新技术企业</span><span class="tag keyword">ISO9001</span><span class="tag keyword">科技创新</span><span class="tag keyword">健康中国</span><span class="tag keyword">李银祥</span><span class="tag keyword">弹性支撑</span><span class="tag keyword">社会责任</span><span class="tag keyword">质量管理</span><span class="tag keyword">培训体系</span><span class="tag keyword">话术</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 知识单元列表 -->
+        <h2 style="color: #667eea; margin: 30px 0 20px 0; border-bottom: 2px solid #667eea; padding-bottom: 10px;">📖 知识单元</h2>
+
+        <div class="knowledge-unit">
+            <div class="unit-header">
+                <strong>知识单元 #1</strong>
+                <div>
+                    <span class="unit-id">e0789b71...</span>
+                    <span class="validity-badge validity-permanent">有效期: 永久</span>
+                </div>
+            </div>
+            
+            <div class="unit-content">第1章
+
+公司概况与品牌认知
+
+全面了解康姿百德集团的发展历程品牌优势与企业文化
+
+1.1 本章概述
+
+本章是康姿百德郑州店员工培训的第一课。作为一名门店员工，你不仅是产品的分享者，更是品牌的代言人。当客户走进门店，你对公司背景品牌故事技术实力的掌握程度，直接决定了客户对企业的信任度。
+
+本章将从公司发展历程董事长介绍科研专利企业荣誉公益活动企业文化六个维度进行系统讲解，帮助每一位员工建立对品牌的深度认知和发自内心的认同。
+
+1.2 康姿百德集团简介
+
+1.2.1 企业基本信息
+
+康姿百德集团是一家专业从事磁技术研发生产销售的高新技术企业。公司以科技创新健康中国为使命，致力于通过先进的磁场技术改善国民睡眠质量，提升全民健康水平。集团总部位于河北省秦皇岛市，在全国30多个省市自治区建立了专卖店网络，形成了覆盖全国的销售与服务体系。
+
+1.2.2 企业发展历程</div>
+            
+            <div class="section-title">💡 重要概念</div><div class="concepts-list">
+            <div class="concept-item">
+                <div class="concept-name">康姿百德集团</div>
+                <div class="concept-context">核心业务概念</div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-name">专利</div>
+                <div class="concept-context">专业术语</div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-name">高新技术企业</div>
+                <div class="concept-context">专业术语</div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-name">科技创新</div>
+                <div class="concept-context">专业术语</div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-name">健康中国</div>
+                <div class="concept-context">专业术语</div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-name">公益活动</div>
+                <div class="concept-context">专业术语</div>
+            </div>
+            </div>
+            <div class="section-title">🔗 延伸信息</div>
+            <div class="extension-item">
+                <div class="extension-type">市场延伸</div>
+                <div class="extension-content">全国市场拓展策略与区域化运营</div>
+            </div>
+            
+            <div class="extension-item">
+                <div class="extension-type">培训延伸</div>
+                <div class="extension-content">员工能力提升与认证体系</div>
+            </div>
+            
+            <div class="section-title">📚 案例</div>
+            <div class="case-item">
+                <div class="case-type">公益案例</div>
+                <div class="case-title">企业社会责任实践</div>
+                <div class="case-application">应用场景: 展示企业价值观和社会贡献</div>
+            </div>
+            
+            <div class="section-title">⚠️ 注意事项</div>
+            <div class="note-item note-medium">
+                <div class="note-type">技术规范 (中优先级)</div>
+                <div class="note-content">技术参数必须严格按照官方资料介绍</div>
+            </div>
+            
+            
+        <div class="conversation-node">
+            <div class="conversation-title">💬 可对话节点</div>
+            <div class="conversation-question">问题: 如何向客户介绍李银祥董事长的背景和成就？</div>
+            <div class="conversation-tags">
+                <span class="tag sub">企业发展历程</span><span class="tag sub">董事长介绍</span><span class="tag sub">高新技术企业</span>
+            </div>
+        </div>
+        
+            
+            <div style="margin-top: 15px; color: #999; font-size: 0.85em;">
+                📂 章节: root | 
+                📝 字数: 383 | 
+                🏷️ 标签: 企业发展历程, 董事长介绍, 高新技术企业, 员工培训, 企业文化
+            </div>
+        </div>
+    
+        <div class="knowledge-unit">
+            <div class="unit-header">
+                <strong>知识单元 #2</strong>
+                <div>
+                    <span class="unit-id">5f0ac94b...</span>
+                    <span class="validity-badge validity-permanent">有效期: 永久</span>
+                </div>
+            </div>
+            
+            <div class="unit-content">民睡眠质量，提升全民健康水平。集团总部位于河北省秦皇岛市，在全国30多个省市自治区建立了专卖店网络，形成了覆盖全国的销售与服务体系。
+
+1.2.2 企业发展历程
+
+康姿百德集团的发展史是一部从科研项目到行业领军企业的奋斗史。以2004年年之前年李银祥先生启动模拟古地磁场睡眠系统项目研发为起点，历经近30年的发展，已成长为集研发生产销售服务于一体的集团化企业。
+
+一创业期（2004年年之前2004年）
+
+这是康姿百德的技术積累与产品孵化阶段。李银祥先生从科研领域转向磁疗产品应用，历经9年潜心研发，将模拟古地磁场发生器核心技术从实验室带到市场。
+
+二成长期（2005年2010年）
+
+这是康姿百德市场拓展与产能升级的关键阶段。公司建立了经销商网络，建成现代化产业园，实现了自动化生产，奠定了规模化发展基础。
+
+三发展期（20112016年）</div>
+            
+            <div class="section-title">💡 重要概念</div><div class="concepts-list">
+            <div class="concept-item">
+                <div class="concept-name">康姿百德集团</div>
+                <div class="concept-context">核心业务概念</div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-name">模拟古地磁场</div>
+                <div class="concept-context">专业术语</div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-name">李银祥</div>
+                <div class="concept-context">专业术语</div>
+            </div>
+            </div>
+            <div class="section-title">🔗 延伸信息</div>
+            <div class="extension-item">
+                <div class="extension-type">技术延伸</div>
+                <div class="extension-content">磁场技术在不同健康领域的应用前景</div>
+            </div>
+            
+            <div class="extension-item">
+                <div class="extension-type">市场延伸</div>
+                <div class="extension-content">全国市场拓展策略与区域化运营</div>
+            </div>
+            
+            <div class="section-title">📚 案例</div>
+            <div class="case-item">
+                <div class="case-type">发展案例</div>
+                <div class="case-title">企业成长轨迹</div>
+                <div class="case-application">应用场景: 了解企业发展阶段和关键决策</div>
+            </div>
+            
+            
+            
+        <div class="conversation-node">
+            <div class="conversation-title">💬 可对话节点</div>
+            <div class="conversation-question">问题: 康姿百德的核心技术优势是什么？</div>
+            <div class="conversation-tags">
+                <span class="tag sub">企业发展历程</span><span class="tag sub">李银祥</span><span class="tag sub">模拟古地磁场</span>
+            </div>
+        </div>
+        
+            
+            <div style="margin-top: 15px; color: #999; font-size: 0.85em;">
+                📂 章节: root | 
+                📝 字数: 359 | 
+                🏷️ 标签: 企业发展历程, 李银祥, 模拟古地磁场, 员工培训, 品牌认知
+            </div>
+        </div>
+    
+        <div class="knowledge-unit">
+            <div class="unit-header">
+                <strong>知识单元 #3</strong>
+                <div>
+                    <span class="unit-id">0e01c0af...</span>
+                    <span class="validity-badge validity-permanent">有效期: 永久</span>
+                </div>
+            </div>
+            
+            <div class="unit-content">）
+
+这是康姿百德市场拓展与产能升级的关键阶段。公司建立了经销商网络，建成现代化产业园，实现了自动化生产，奠定了规模化发展基础。
+
+三发展期（20112016年）
+
+这是康姿百德全面升级的黄金时期。技术突破品牌建设团队培养员工激励多线并进，企业实力全面增强。
+
+四转型期（2017年至今）
+
+公司更名为康姿百德集团，开启集团化运营新篇章。持续推进技术创新智能制造转型和全国市场深化布局。
+
+1.3 董事长李银祥先生
+
+1.3.1 个人背景
+
+1.3.2 科研成就时间线
+
+李银祥先生是我国磁疗技术领域的开拓者和领军人物。他的科研历程跨越多个技术领域，最终聚焦于磁疗健康事业。
+
+1.3.3 获奖荣誉
+
+1.3.4 向客户介绍董事长的标准话术
+
+在向客户介绍公司背景时，董事长的故事是最有说服力的内容之一。以下是标准介绍话术，根据不同场景可选择简版或详版：
+
+1. 简版介绍（30秒）</div>
+            
+            <div class="section-title">💡 重要概念</div><div class="concepts-list">
+            <div class="concept-item">
+                <div class="concept-name">康姿百德集团</div>
+                <div class="concept-context">核心业务概念</div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-name">磁疗技术</div>
+                <div class="concept-context">核心业务概念</div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-name">李银祥</div>
+                <div class="concept-context">专业术语</div>
+            </div>
+            </div>
+            <div class="section-title">🔗 延伸信息</div>
+            <div class="extension-item">
+                <div class="extension-type">技术延伸</div>
+                <div class="extension-content">磁场技术在不同健康领域的应用前景</div>
+            </div>
+            
+            <div class="extension-item">
+                <div class="extension-type">培训延伸</div>
+                <div class="extension-content">员工能力提升与认证体系</div>
+            </div>
+            
+            <div class="section-title">📚 案例</div>
+            <div class="case-item">
+                <div class="case-type">发展案例</div>
+                <div class="case-title">企业成长轨迹</div>
+                <div class="case-application">应用场景: 了解企业发展阶段和关键决策</div>
+            </div>
+            
+            
+            
+        <div class="conversation-node">
+            <div class="conversation-title">💬 可对话节点</div>
+            <div class="conversation-question">问题: 如何向客户介绍李银祥董事长的背景和成就？</div>
+            <div class="conversation-tags">
+                <span class="tag sub">李银祥</span><span class="tag sub">员工培训</span><span class="tag sub">品牌认知</span>
+            </div>
+        </div>
+        
+            
+            <div style="margin-top: 15px; color: #999; font-size: 0.85em;">
+                📂 章节: root | 
+                📝 字数: 390 | 
+                🏷️ 标签: 李银祥, 员工培训, 品牌认知, 话术, type:manual
+            </div>
+        </div>
+    
+        <div class="knowledge-unit">
+            <div class="unit-header">
+                <strong>知识单元 #4</strong>
+                <div>
+                    <span class="unit-id">bb169fe8...</span>
+                    <span class="validity-badge validity-permanent">有效期: 永久</span>
+                </div>
+            </div>
+            
+            <div class="unit-content">绍董事长的标准话术
+
+在向客户介绍公司背景时，董事长的故事是最有说服力的内容之一。以下是标准介绍话术，根据不同场景可选择简版或详版：
+
+1. 简版介绍（30秒）
+
+【员工】 叔叔阿姨，我们康姿百德的创始人李银祥董事长，是北京大学清华大学的高才生，拥有11项国家专利，是我国磁疗技术领域的领军人物。他用了30年时间专注做一件事，就是用磁场技术让老百姓睡好觉更健康。
+
+2. 详版介绍（2分钟）
+
+【员工】 叔叔阿姨，我给您介绍一下我们董事长的故事。李银祥董事长1963年出生在秦皇岛，先后在北京大学清华大学中国科学院等顶尖学府深造。他从1981年就开始做科研，在激光光谱管道防腐电缆修复等多个领域都有突破性成果。</div>
+            
+            <div class="section-title">💡 重要概念</div><div class="concepts-list">
+            <div class="concept-item">
+                <div class="concept-name">磁疗技术</div>
+                <div class="concept-context">核心业务概念</div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-name">李银祥</div>
+                <div class="concept-context">专业术语</div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-name">专利</div>
+                <div class="concept-context">专业术语</div>
+            </div>
+            </div>
+            <div class="section-title">🔗 延伸信息</div>
+            <div class="extension-item">
+                <div class="extension-type">技术延伸</div>
+                <div class="extension-content">磁场技术在不同健康领域的应用前景</div>
+            </div>
+            
+            <div class="extension-item">
+                <div class="extension-type">培训延伸</div>
+                <div class="extension-content">员工能力提升与认证体系</div>
+            </div>
+            
+            <div class="section-title">📚 案例</div>
+            <div class="case-item">
+                <div class="case-type">话术案例</div>
+                <div class="case-title">客户沟通标准话术</div>
+                <div class="case-application">应用场景: 门店员工向客户介绍产品和技术时使用</div>
+            </div>
+            
+            <div class="section-title">⚠️ 注意事项</div>
+            <div class="note-item note-medium">
+                <div class="note-type">技术规范 (中优先级)</div>
+                <div class="note-content">技术参数必须严格按照官方资料介绍</div>
+            </div>
+            
+            
+        <div class="conversation-node">
+            <div class="conversation-title">💬 可对话节点</div>
+            <div class="conversation-question">问题: 如何向客户介绍李银祥董事长的背景和成就？</div>
+            <div class="conversation-tags">
+                <span class="tag sub">李银祥</span><span class="tag sub">员工培训</span><span class="tag sub">品牌认知</span>
+            </div>
+        </div>
+        
+            
+            <div style="margin-top: 15px; color: #999; font-size: 0.85em;">
+                📂 章节: root | 
+                📝 字数: 305 | 
+                🏷️ 标签: 李银祥, 员工培训, 品牌认知, 话术, type:manual
+            </div>
+        </div>
+    
+        <div class="knowledge-unit">
+            <div class="unit-header">
+                <strong>知识单元 #5</strong>
+                <div>
+                    <span class="unit-id">f67c593c...</span>
+                    <span class="validity-badge validity-annual">有效期: 年度</span>
+                </div>
+            </div>
+            
+            <div class="unit-content">祥董事长1963年出生在秦皇岛，先后在北京大学清华大学中国科学院等顶尖学府深造。他从1981年就开始做科研，在激光光谱管道防腐电缆修复等多个领域都有突破性成果。
+
+【员工】 2004年年之前年，李董事长发明了模拟古地磁场发生器，这是我们所有产品的核心技术。他花了9年时间研发打磨，直到2004年年才正式成立公司。可以说，李董事长是用做科学家的精神在做企业，这也是我们产品能够拥有11项国家专利的根本原因。
+
+1.4 科研成果与专利体系
+
+1.4.1 11项国家专利清单
+
+康姿百德集团拥有11项国家专利，覆盖产品结构材料应用技术创新等多个领域。这是公司技术实力的最直接体现。
+
+1.4.2 核心技术一：模拟古地磁场发生器
+
+这是康姿百德集团的核心专利技术，也是所有产品的技术基础。通过特殊的磁性材料排列和磁场控制技术，模拟地球远古时期的磁场强度和特征，为人体创造理想的睡眠磁场环境。
+
+1. 技术参数对比</div>
+            
+            <div class="section-title">💡 重要概念</div><div class="concepts-list">
+            <div class="concept-item">
+                <div class="concept-name">康姿百德集团</div>
+                <div class="concept-context">核心业务概念</div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-name">模拟古地磁场</div>
+                <div class="concept-context">专业术语</div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-name">专利</div>
+                <div class="concept-context">专业术语</div>
+            </div>
+            </div>
+            <div class="section-title">🔗 延伸信息</div>
+            <div class="extension-item">
+                <div class="extension-type">培训延伸</div>
+                <div class="extension-content">员工能力提升与认证体系</div>
+            </div>
+            
+            <div class="section-title">📚 案例</div>
+            <div class="case-item">
+                <div class="case-type">话术案例</div>
+                <div class="case-title">客户沟通标准话术</div>
+                <div class="case-application">应用场景: 门店员工向客户介绍产品和技术时使用</div>
+            </div>
+            
+            <div class="section-title">⚠️ 注意事项</div>
+            <div class="note-item note-medium">
+                <div class="note-type">技术规范 (中优先级)</div>
+                <div class="note-content">技术参数必须严格按照官方资料介绍</div>
+            </div>
+            
+            
+        <div class="conversation-node">
+            <div class="conversation-title">💬 可对话节点</div>
+            <div class="conversation-question">问题: 如何向客户介绍李银祥董事长的背景和成就？</div>
+            <div class="conversation-tags">
+                <span class="tag sub">模拟古地磁场</span><span class="tag sub">员工培训</span><span class="tag sub">品牌认知</span>
+            </div>
+        </div>
+        
+            
+            <div style="margin-top: 15px; color: #999; font-size: 0.85em;">
+                📂 章节: root | 
+                📝 字数: 397 | 
+                🏷️ 标签: 模拟古地磁场, 员工培训, 品牌认知, 专利体系, 科研成果
+            </div>
+        </div>
+    
+        <div class="knowledge-unit">
+            <div class="unit-header">
+                <strong>知识单元 #6</strong>
+                <div>
+                    <span class="unit-id">26b69069...</span>
+                    <span class="validity-badge validity-annual">有效期: 年度</span>
+                </div>
+            </div>
+            
+            <div class="unit-content">心专利技术，也是所有产品的技术基础。通过特殊的磁性材料排列和磁场控制技术，模拟地球远古时期的磁场强度和特征，为人体创造理想的睡眠磁场环境。
+
+1. 技术参数对比
+
+1.4.3 核心技术二：弹性支撑系统
+
+弹性支撑系统是基于人体工程学原理设计的三层复合结构系统，实现对人体各部位的精准支撑，是保证舒适睡眠的关键技术。
+
+1.4.4 向客户介绍技术的标准话术
+
+1. 模拟古地磁场介绍话术
+
+【员工】 叔叔阿姨，您知道吗，我们地球本身就是一个大磁场。远古时期地球的磁场强度更高，那时候人的平均寿命反而更长。我们董事长的核心发明，就是用特殊的磁性材料和排列方式，在床上模拟出远古时期的磁场环境。您睡在上面，就像回到了地球最健康的磁场环境里。
+
+2. 弹性支撑系统介绍话术</div>
+            
+            <div class="section-title">💡 重要概念</div><div class="concepts-list">
+            <div class="concept-item">
+                <div class="concept-name">模拟古地磁场</div>
+                <div class="concept-context">专业术语</div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-name">弹性支撑系统</div>
+                <div class="concept-context">专业术语</div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-name">专利</div>
+                <div class="concept-context">专业术语</div>
+            </div>
+            </div>
+            <div class="section-title">🔗 延伸信息</div>
+            <div class="extension-item">
+                <div class="extension-type">培训延伸</div>
+                <div class="extension-content">员工能力提升与认证体系</div>
+            </div>
+            
+            <div class="section-title">📚 案例</div>
+            <div class="case-item">
+                <div class="case-type">话术案例</div>
+                <div class="case-title">客户沟通标准话术</div>
+                <div class="case-application">应用场景: 门店员工向客户介绍产品和技术时使用</div>
+            </div>
+            
+            <div class="section-title">⚠️ 注意事项</div>
+            <div class="note-item note-medium">
+                <div class="note-type">技术规范 (中优先级)</div>
+                <div class="note-content">技术参数必须严格按照官方资料介绍</div>
+            </div>
+            
+            
+        <div class="conversation-node">
+            <div class="conversation-title">💬 可对话节点</div>
+            <div class="conversation-question">问题: 如何向客户介绍李银祥董事长的背景和成就？</div>
+            <div class="conversation-tags">
+                <span class="tag sub">模拟古地磁场</span><span class="tag sub">员工培训</span><span class="tag sub">品牌认知</span>
+            </div>
+        </div>
+        
+            
+            <div style="margin-top: 15px; color: #999; font-size: 0.85em;">
+                📂 章节: root | 
+                📝 字数: 332 | 
+                🏷️ 标签: 模拟古地磁场, 员工培训, 品牌认知, 弹性支撑, type:manual
+            </div>
+        </div>
+    
+        <div class="knowledge-unit">
+            <div class="unit-header">
+                <strong>知识单元 #7</strong>
+                <div>
+                    <span class="unit-id">41a72daa...</span>
+                    <span class="validity-badge validity-annual">有效期: 年度</span>
+                </div>
+            </div>
+            
+            <div class="unit-content">们董事长的核心发明，就是用特殊的磁性材料和排列方式，在床上模拟出远古时期的磁场环境。您睡在上面，就像回到了地球最健康的磁场环境里。
+
+2. 弹性支撑系统介绍话术
+
+【员工】 叔叔阿姨，我们这张床不仅有磁场功能，它的支撑系统也是专利技术。您躺上去之后，肩部腰部臀部脚部都能得到精确的支撑。特别是腰部，很多人睡普通床腰部悬空，早上起来腰痛。我们这个弹性支撑系统能让您的腰部完全贴合，只有约20克的轻微压力，非常舒服。
+
+1.5 企业荣誉与认证体系
+
+1.5.1 政府表彰与资质认证
+
+企业获得的荣誉是第三方对企业实力的客观评价，是建立客户信任的有力工具。以下是公司获得的主要荣誉认证：
+
+1.5.2 向客户介绍荣誉的标准话术</div>
+            
+            <div class="section-title">💡 重要概念</div><div class="concepts-list">
+            <div class="concept-item">
+                <div class="concept-name">弹性支撑系统</div>
+                <div class="concept-context">专业术语</div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-name">专利</div>
+                <div class="concept-context">专业术语</div>
+            </div>
+            </div>
+            <div class="section-title">🔗 延伸信息</div>
+            <div class="extension-item">
+                <div class="extension-type">培训延伸</div>
+                <div class="extension-content">员工能力提升与认证体系</div>
+            </div>
+            
+            <div class="section-title">📚 案例</div>
+            <div class="case-item">
+                <div class="case-type">话术案例</div>
+                <div class="case-title">客户沟通标准话术</div>
+                <div class="case-application">应用场景: 门店员工向客户介绍产品和技术时使用</div>
+            </div>
+            
+            <div class="section-title">⚠️ 注意事项</div>
+            <div class="note-item note-medium">
+                <div class="note-type">技术规范 (中优先级)</div>
+                <div class="note-content">技术参数必须严格按照官方资料介绍</div>
+            </div>
+            
+            
+        <div class="conversation-node">
+            <div class="conversation-title">💬 可对话节点</div>
+            <div class="conversation-question">问题: 如何向客户介绍李银祥董事长的背景和成就？</div>
+            <div class="conversation-tags">
+                <span class="tag sub">员工培训</span><span class="tag sub">品牌认知</span><span class="tag sub">弹性支撑</span>
+            </div>
+        </div>
+        
+            
+            <div style="margin-top: 15px; color: #999; font-size: 0.85em;">
+                📂 章节: root | 
+                📝 字数: 310 | 
+                🏷️ 标签: 员工培训, 品牌认知, 弹性支撑, 企业荣誉, type:manual
+            </div>
+        </div>
+    
+        <div class="knowledge-unit">
+            <div class="unit-header">
+                <strong>知识单元 #8</strong>
+                <div>
+                    <span class="unit-id">6aabe3ed...</span>
+                    <span class="validity-badge validity-annual">有效期: 年度</span>
+                </div>
+            </div>
+            
+            <div class="unit-content">府表彰与资质认证
+
+企业获得的荣誉是第三方对企业实力的客观评价，是建立客户信任的有力工具。以下是公司获得的主要荣誉认证：
+
+1.5.2 向客户介绍荣誉的标准话术
+
+【员工】 叔叔阿姨，我们康姿百德是国家认定的高新技术企业，拥有11项国家专利，通过了ISO9001质量管理体系认证。您可能不了解这个认证，简单说就是国际最权威的质量管理标准，说明我们从原材料采购到生产制造到成品出厂，每一个环节都有严格的质量控制。
+
+【员工】 而且我们2014年年就获得了全国质量服务诚信示范企业称号，这是国家级的认可，不是随便哪个企业都能拿到的。您买我们的产品，质量和服务都是有国家背书的，可以放心。
+
+1.6 公益活动与社会责任
+
+1.6.1 全民健康快乐同行系列活动
+
+康姿百德集团与中国登山协会合作，从2009年年至2016年年连续多年举办全民健康快乐同行大型公益活动。
+
+1.6.2 赈灾捐赠</div>
+            
+            <div class="section-title">💡 重要概念</div><div class="concepts-list">
+            <div class="concept-item">
+                <div class="concept-name">康姿百德集团</div>
+                <div class="concept-context">核心业务概念</div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-name">专利</div>
+                <div class="concept-context">专业术语</div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-name">高新技术企业</div>
+                <div class="concept-context">专业术语</div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-name">ISO9001</div>
+                <div class="concept-context">专业术语</div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-name">社会责任</div>
+                <div class="concept-context">专业术语</div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-name">公益活动</div>
+                <div class="concept-context">专业术语</div>
+            </div>
+            </div>
+            <div class="section-title">🔗 延伸信息</div>
+            <div class="extension-item">
+                <div class="extension-type">培训延伸</div>
+                <div class="extension-content">员工能力提升与认证体系</div>
+            </div>
+            
+            <div class="section-title">📚 案例</div>
+            <div class="case-item">
+                <div class="case-type">话术案例</div>
+                <div class="case-title">客户沟通标准话术</div>
+                <div class="case-application">应用场景: 门店员工向客户介绍产品和技术时使用</div>
+            </div>
+            
+            <div class="case-item">
+                <div class="case-type">公益案例</div>
+                <div class="case-title">企业社会责任实践</div>
+                <div class="case-application">应用场景: 展示企业价值观和社会贡献</div>
+            </div>
+            
+            <div class="section-title">⚠️ 注意事项</div>
+            <div class="note-item note-medium">
+                <div class="note-type">技术规范 (中优先级)</div>
+                <div class="note-content">技术参数必须严格按照官方资料介绍</div>
+            </div>
+            
+            
+        <div class="conversation-node">
+            <div class="conversation-title">💬 可对话节点</div>
+            <div class="conversation-question">问题: 康姿百德的核心技术优势是什么？</div>
+            <div class="conversation-tags">
+                <span class="tag sub">高新技术企业</span><span class="tag sub">员工培训</span><span class="tag sub">品牌认知</span>
+            </div>
+        </div>
+        
+            
+            <div style="margin-top: 15px; color: #999; font-size: 0.85em;">
+                📂 章节: root | 
+                📝 字数: 388 | 
+                🏷️ 标签: 高新技术企业, 员工培训, 品牌认知, 社会责任, ISO9001
+            </div>
+        </div>
+    
+        <div class="knowledge-unit">
+            <div class="unit-header">
+                <strong>知识单元 #9</strong>
+                <div>
+                    <span class="unit-id">a303b251...</span>
+                    <span class="validity-badge validity-annual">有效期: 年度</span>
+                </div>
+            </div>
+            
+            <div class="unit-content">.6.1 全民健康快乐同行系列活动
+
+康姿百德集团与中国登山协会合作，从2009年年至2016年年连续多年举办全民健康快乐同行大型公益活动。
+
+1.6.2 赈灾捐赠
+
+1.6.3 读书点亮人生公益计划
+
+康姿百德集团长期开展图书捐赠公益活动，向贫困地区学校农村图书室社区阅览室老年活动中心捐赠健康养生科普读物文学作品儿童读物等图书。
+
+1.6.4 全国健康教育活动
+
+1.6.5 向客户介绍公益活动的话术
+
+【员工】 叔叔阿姨，我们康姿百德不只是卖产品，我们一直在做公益。从2009年年开始，我们就和中国登山协会合作，在全国多个城市举办全民健康快乐同行活动，累计有超过18,000人参加。汶川地震雅安地震的时候，我们都是第一时间捐款捐物。一个有社会责任感的企业，产品才值得信赖，您说是不是？
+
+1.7 员工必知必会清单
+
+以下是每位员工必须熟练掌握的公司基本信息，入职培训期间将进行考核：
+
+第1章完</div>
+            
+            <div class="section-title">💡 重要概念</div><div class="concepts-list">
+            <div class="concept-item">
+                <div class="concept-name">康姿百德集团</div>
+                <div class="concept-context">核心业务概念</div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-name">社会责任</div>
+                <div class="concept-context">专业术语</div>
+            </div>
+            
+            <div class="concept-item">
+                <div class="concept-name">公益活动</div>
+                <div class="concept-context">专业术语</div>
+            </div>
+            </div>
+            <div class="section-title">🔗 延伸信息</div>
+            <div class="extension-item">
+                <div class="extension-type">培训延伸</div>
+                <div class="extension-content">员工能力提升与认证体系</div>
+            </div>
+            
+            <div class="section-title">📚 案例</div>
+            <div class="case-item">
+                <div class="case-type">话术案例</div>
+                <div class="case-title">客户沟通标准话术</div>
+                <div class="case-application">应用场景: 门店员工向客户介绍产品和技术时使用</div>
+            </div>
+            
+            <div class="case-item">
+                <div class="case-type">公益案例</div>
+                <div class="case-title">企业社会责任实践</div>
+                <div class="case-application">应用场景: 展示企业价值观和社会贡献</div>
+            </div>
+            
+            <div class="section-title">⚠️ 注意事项</div>
+            <div class="note-item note-medium">
+                <div class="note-type">培训要求 (中优先级)</div>
+                <div class="note-content">入职7天内必须掌握全部内容并通过考核</div>
+            </div>
+            
+            
+        <div class="conversation-node">
+            <div class="conversation-title">💬 可对话节点</div>
+            <div class="conversation-question">问题: 康姿百德集团有哪些社会责任实践？</div>
+            <div class="conversation-tags">
+                <span class="tag sub">员工培训</span><span class="tag sub">品牌认知</span><span class="tag sub">社会责任</span>
+            </div>
+        </div>
+        
+            
+            <div style="margin-top: 15px; color: #999; font-size: 0.85em;">
+                📂 章节: root | 
+                📝 字数: 397 | 
+                🏷️ 标签: 员工培训, 品牌认知, 社会责任, type:manual, 公益活动
+            </div>
+        </div>
+    
+        <!-- 统计信息 -->
+        <div class="statistics">
+            <h2>📊 统计信息</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-value">9</div>
+                    <div class="stat-label">知识单元</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">3261</div>
+                    <div class="stat-label">总字数</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">362</div>
+                    <div class="stat-label">平均单元长度</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">27</div>
+                    <div class="stat-label">标签总数</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>知识库生成时间: 2026-02-16T14:00:21.659125</p>
+            <p>HTML转换状态: ready | 模板: knowledge_base_html</p>
+        </div>
+    </div>
+</body>
+</html>
